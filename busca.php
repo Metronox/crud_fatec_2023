@@ -11,7 +11,7 @@ $data = array();
 if($received_data->query != '')
 {
 	$query = "
-	SELECT * FROM fatec_alunos 
+	SELECT * FROM fatec_alunos4 
 	WHERE first_name LIKE '%".$received_data->query."%' 
 	OR last_name LIKE '%".$received_data->query."%' 
 	ORDER BY id DESC
@@ -20,7 +20,7 @@ if($received_data->query != '')
 else
 {
 	$query = "
-	SELECT * FROM fatec_alunos 
+	SELECT * FROM fatec_alunos4
 	ORDER BY id DESC
 	";
 }
